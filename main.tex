@@ -1,0 +1,27 @@
+% 
+% Example of how to use a custom TTF font by following the directions here:
+% http://math.stanford.edu/~jyzhao/latexfonts.php 
+%
+% In this case, the custom font is LoKinderSchrift, from
+% http://www.fonts101.com/fonts/view/Uncategorized/22887/LoKinderSchrift
+%
+\documentclass[8pt, twocolumn]{book}
+\input{preamble.tex}
+\input{variables.tex}
+
+\begin{document}
+\input{titlepage.tex}
+
+\twocolumn
+\section*{Herzlich Willkommen}
+
+In den ersten Wochen kommen eine Menge Informationen auf dich zu. Dieses Heft soll nicht nur ein Teil davon sein, sondern dir das Mitschreiben ersparen und dir helfen, den Überblick zu behalten.
+
+Wichtige Termine am Anfang sind die Ersti-Woche und die Ersti-Fahrt. Die Ersti-Woche beginnt am 9. Oktober und soll dir eine erste Orientierung im Studiengang geben. Hier wirst du von den Tutoren und dem Fachschaftsrat betreut.
+Die Ersti-Fahrt findet am Wochenende vom 09.11. bis zum 11.11. in Kelberg statt und soll es dir ermöglichen, Kontakte mit anderen Erstsemestern aber auch mit bereits fortgeschrittenen Studierenden zu knüpfen.
+
+Der Fachschaftsrat
+
+\newpage
+\foreach \x in \listofsections {[\x]}
+\end{document}

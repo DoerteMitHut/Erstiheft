@@ -1,0 +1,32 @@
+\onecolumn
+    \raisebox{-\totalheight}[0pt][0pt]{
+        {\hspace{-2.25cm}\includegraphics[width=0.97\paperwidth, trim = 0 0 0 -1.5cm]{\imagePath/\titleImageFilename}}
+    }
+\begin{minipage}{\textwidth}    
+    \vspace*{-3cm}
+    \hspace{-\dimexpr\oddsidemargin+3cm}
+    \colorbox{black}{
+        \makebox{
+            \hspace{1cm}\textcolor{white}{\fontsize{70}{5}\customfont{Readme.txt}}\hspace*{1cm}
+        }
+    }
+    \noindent\hspace*{-1cm}
+    \fbox{
+        {\fontsize{18.5}{1}\textmd{ERSTI-INFO DER FACHSCHAFT ANGEWANDTE INFORMATIIK}}
+    }\\
+    \parbox[t][21.65cm][b]{\textwidth}{
+    %\vspace*{18cm}
+    \hspace*{-1.8cm}
+    \fcolorbox{black}{black}{
+        \parbox[t][1cm][c]{4cm}{
+            \textcolor{white}{
+                \fontsize{22}{1}\textmd{
+                    WS \currentTwoDigitYear/\the\numexpr (\currentTwoDigitYear) + 1\relax
+                }
+            }
+        }
+    }
+}
+\vspace*{-10cm}
+\end{minipage}
+\newpage

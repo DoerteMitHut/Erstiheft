@@ -9,10 +9,21 @@
 \usepackage{ifthen}
 \usepackage[explicit]{titlesec}
 \usepackage{pgffor}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{xstring}
+\usepackage{amssymb}
+
 \newcommand\customfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
 \input{utility.tex}
 
 
 \titleformat{\section}[display]{\huge}{\thesection}{2em}{#1}%
+
+\fancyhf{}
+\cfoot{\thepage}
+
+
+
 
 

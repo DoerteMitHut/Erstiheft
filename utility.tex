@@ -1,3 +1,7 @@
 \newcommand{\makeDate}[2][addYear]{
-#2\ifthenelse{\equal{#1}{addYear}}{\the\numexpr(\the\year) - 2000\relax}{}
+    #2\ifthenelse{\equal{#1}{addYear}}
+                  {\the\numexpr(\the\year) - 2000\relax}
+                  {}
 }
+\usepackage{xstring}
+\newcommand\IfStringInList[2]{\IfSubStr{,#2,}{,#1,}}
